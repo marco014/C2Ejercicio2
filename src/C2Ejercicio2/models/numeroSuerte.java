@@ -2,7 +2,6 @@ package C2Ejercicio2.models;
 
 public class numeroSuerte {
     private static int suerte, valor1, valor2, valor3, valor4;
-
     public static void numeroSuerte(int dia, int mes, int anio){
         int suma = 0;
         suma = dia+mes+anio;
@@ -12,6 +11,5 @@ public class numeroSuerte {
         valor4 = suma%10;
         suerte = valor1+valor2+valor3+valor4;
         System.out.println("Su numero de la suerte es: " + suerte);
-
     }
 }
