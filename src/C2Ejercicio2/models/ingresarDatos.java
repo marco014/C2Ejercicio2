@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class ingresarDatos {
     public int dia, mes, anio;
-
     public ingresarDatos() {}
     public void ingresarDatos(){
         Scanner entrada = new Scanner(System.in);
