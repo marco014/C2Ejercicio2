@@ -7,7 +7,7 @@ public class main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int dia, mes, ano;
+        int dia, mes, anio;
         System.out.println("Ingrese su fecha de nacimiento");
         do {
             System.out.print("Dia: ");
@@ -19,8 +19,8 @@ public class main {
         } while (mes<=0 || mes>=13);
         do {
             System.out.print("Año (1990 - 2030): ");
-            ano = entrada.nextInt();
-        } while (ano<=1989 || ano>=2031);
-        numeroSuerte(dia, mes,ano);
+            anio = entrada.nextInt();
+        } while (anio<=1989 || anio>=2031);
+        numeroSuerte(dia, mes,anio);
     }
 }
