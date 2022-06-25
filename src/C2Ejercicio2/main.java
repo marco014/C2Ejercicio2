@@ -9,13 +9,18 @@ public class main {
         Scanner entrada = new Scanner(System.in);
         int dia, mes, ano;
         System.out.println("Ingrese su fecha de nacimiento");
-        System.out.print("Dia: ");
-        dia = entrada.nextInt();
-        System.out.print("Mes: ");
-        mes = entrada.nextInt();
-        System.out.print("Año: ");
-        ano = entrada.nextInt();
+        do {
+            System.out.print("Dia: ");
+            dia = entrada.nextInt();
+        } while (dia<=0 || dia>=32);
+        do {
+            System.out.print("Mes: ");
+            mes = entrada.nextInt();
+        } while (mes<=0 || mes>=13);
+        do {
+            System.out.print("Año (1990 - 2030): ");
+            ano = entrada.nextInt();
+        } while (ano<=1989 || ano>=2031);
         numeroSuerte(dia, mes,ano);
     }
-
 }
